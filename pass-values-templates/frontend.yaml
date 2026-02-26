@@ -1,0 +1,4 @@
+appName: frontend
+port: 80
+targetPort: 80
+serviceType: LoadBalancer

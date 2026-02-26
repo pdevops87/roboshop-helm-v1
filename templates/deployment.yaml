@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ .Values.appName }}
+  labels:
+    appName: {{ .Values.appName }}
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      appName: {{ .Values.appName }}
+  template:
+    metadata:
+      labels:
+        appName: {{ .Values.appName }}
+    spec:
+      containers:
+        - name: {{ .Values.appName }}
+          image: public.ecr.aws/w8x4g9h7/roboshop-v3/{{ .Values.appName }}
+          envFrom:
+            - configMapRef:
+                name: frontend-cmap
