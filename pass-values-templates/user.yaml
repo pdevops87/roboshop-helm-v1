@@ -1,0 +1,5 @@
+appName: user
+dataCMap:
+  MONGO: "catalogue"
+  MONGO_URL: "mongodb://172.31.25.28:27017/users"
+  REDIS_URL: "redis://13.222.58.137:6379"

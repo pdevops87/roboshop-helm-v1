@@ -1,0 +1,4 @@
+appName: shipping
+dataCMap:
+  CART_ENDPOINT: "cart:8080"
+  DB_HOST: "172.31.26.88"
