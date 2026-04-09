@@ -1,1 +1,4 @@
 appName: catalogue
+dataCMap:
+  MONGO: "true"
+  MONGO_URL: "mongodb://172.31.66.149:27017/catalogue"
